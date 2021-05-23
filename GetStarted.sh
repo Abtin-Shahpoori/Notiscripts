@@ -82,34 +82,33 @@ fi
 
 # Adding User Info to yaml file
   # name
-    echo -e "name: ${Name}" >> .UserData.yaml
+    echo -e " name: ${Name}" >> .UserData.yaml
 
   # date of Birth
-    echo -e "dateOfBirth:" >> .UserData.yaml
-    echo -e "  year: ${year}" >> .UserData.yaml
-    echo -e "  month: ${month}" >> .UserData.yaml
-    echo -e "  day: ${day}"  >> .UserData.yaml
+    echo -e " dateOfBirth:" >> .UserData.yaml
+    echo -e "   year: \"${year}\"" >> .UserData.yaml
+    echo -e "   month: \"${month}\"" >> .UserData.yaml
+    echo -e "   day: \"${day}\""  >> .UserData.yaml
 
   #lunchtime
-    echo -e "lunchTime:" >> .UserData.yaml
-    echo -e "  lunchHour: ${lHour}" >> .UserData.yaml
-    echo -e "  lunchMinute ${lMinute}"  >> .UserData.yaml
+    echo -e " lunchTime:" >> .UserData.yaml
+    echo -e "   lunchHour: \"${lHour}\"" >> .UserData.yaml
+    echo -e "   lunchMinute: \"${lMinute}\""  >> .UserData.yaml
 
   # dinnertime
-    echo -e "dinnerTime:" >> .UserData.yaml
-    echo -e "  dinnerHour: ${dHour}" >> .UserData.yaml
-    echo -e "  dinnerMinute: ${dMinute}" >> .UserData.yaml
+    echo -e " dinnerTime:" >> .UserData.yaml
+    echo -e "   dinnerHour: \"${dHour}\"" >> .UserData.yaml
+    echo -e "   dinnerMinute: \"${dMinute}\"" >> .UserData.yaml
 
   # bedtime
-    echo -e "bedTime:" >> .UserData.yaml
-    echo -e "  bedHour: ${bHour}" >> .UserData.yaml
-    echo -e "  bedMinute: ${bMinute}" >> .UserData.yaml
+    echo -e " bedTime:" >> .UserData.yaml
+    echo -e "   bedHour: \"${bHour}\"" >> .UserData.yaml
+    echo -e "   bedMinute: \"${bMinute}\"" >> .UserData.yaml
 
   # Idle Alert
-    echo -e "idleAlert: ${Idle_alert_State}"  >> .UserData.yaml
+    echo -e " idleAlert: ${Idle_alert_State}"  >> .UserData.yaml
 
 
 # Saying bye
-echo -e "${bold}${Green}we Are all Set, Thank you ${Name}"
 sleep 0.3
-clear
+echo -e "${bold}${Green}we Are all Set, Thank you ${Name}"
