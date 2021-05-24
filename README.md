@@ -5,6 +5,7 @@ Usefull Notification Scripts for Linux and Mac
 Some helpfull notifications for wellness including: Idle Alerts, Bed Time Notifications, ...
 to run it:
 ```
+git clone https://github.com/Abtin-Shahpoori/Notiscripts.git
 cd Notiscripts 
 python3 HealthScript.py
 ```
