@@ -2,6 +2,7 @@ import tkinter as tk
 from tkinter.font import BOLD, Font
 from tkinter.ttk import *
 root = tk.Tk()
+root.attributes('-fullscreen', True)
 root.title("Happy Birthday")
 root['background'] = '#C6EFF1'
 
@@ -33,11 +34,9 @@ Cake = Label(image=gif, borderwidth=0)
 Text = Label(text=f"Happy {age}th Birthday {name}" ,font=("Comic Sans MS", 45, "bold"), background="#C6EFF1", foreground="#9C67CB")
 
 
-# Packing into the screen
+#Packing into the screen
 Cake.pack()
 Text.pack(pady=150)
-
-# Close the window after 10 seconds
 root.after(10000, lambda: root.destroy())
 
 root.after_idle(next_frame)
